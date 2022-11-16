@@ -27,6 +27,8 @@ let package = Package(
             ],
             cSettings: [
                 .define("APPLICATION_EXTENSION_API_ONLY", to: "YES"),
+                .define("__wasi__", to: "YES"),
+                .define("d_m3HasWASI", to: "YES"),
             ]
         ),
         .binaryTarget(
